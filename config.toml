@@ -1,0 +1,41 @@
+baseURL = "https://blog.linesightdigital.com/"
+canonifyURLs = true
+relativeURLs = false
+languageCode = "en-us"
+title = "LineSight Digital Blog"
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  description = "IT insights on Microsoft 365, cloud infrastructure, cybersecurity, and managed IT for Bay Area startups and small businesses."
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "https://linesightdigital.com"
+    weight = 1
+
+  [[menu.main]]
+    name = "Services"
+    url = "https://linesightdigital.com/#services"
+    weight = 2
+
+  [[menu.main]]
+    name = "Pricing"
+    url = "https://linesightdigital.com/#pricing"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "https://blog.linesightdigital.com/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Free Assessment"
+    url = "https://linesightdigital.com/#contact"
+    weight = 5
+
+[minify]
+  minifyOutput = true

@@ -1,0 +1,22 @@
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="https://linesightdigital.com" class="nav-logo">
+      LineSight<span>Digital</span>
+    </a>
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}" class="{{ if eq .Name "Free Assessment" }}nav-cta{{ end }}">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+  <div class="mobile-menu">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="{{ if eq .Name "Free Assessment" }}nav-cta{{ end }}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</header>

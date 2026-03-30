@@ -1,0 +1,43 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="https://linesightdigital.com" class="nav-logo">
+        LineSight<span>Digital</span>
+      </a>
+      <p>IT consulting, security, and managed IT services for Bay Area startups and small businesses.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="https://linesightdigital.com/#services">Microsoft 365 &amp; Security</a>
+        <a href="https://linesightdigital.com/#services">Linux &amp; Cloud</a>
+        <a href="https://linesightdigital.com/#services">Managed IT</a>
+        <a href="https://linesightdigital.com/#services">Backup &amp; Recovery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://linesightdigital.com/#services">Services</a>
+        <a href="https://linesightdigital.com/#pricing">Pricing</a>
+        <a href="https://blog.linesightdigital.com/">Blog</a>
+        <a href="https://linesightdigital.com/#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:info@linesightdigital.com">info@linesightdigital.com</a>
+        <span>Bay Area, California</span>
+        <span>Remote &amp; Onsite</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {{ now.Year }} LineSight Digital. All rights reserved. IT Consulting &amp; Managed Services · Bay Area, CA</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const mobile = document.querySelector('.mobile-menu');
+  if (toggle && mobile) {
+    toggle.addEventListener('click', () => mobile.classList.toggle('open'));
+  }
+</script>

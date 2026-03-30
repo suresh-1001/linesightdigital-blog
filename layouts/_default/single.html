@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<article class="post-single">
+
+  <header class="post-header">
+    <div class="post-header-inner">
+      <div class="post-header-meta">
+        {{ with index .Params.categories 0 }}<span class="post-card-tag">{{ . }}</span>{{ end }}
+        <span class="post-card-date">{{ .Date.Format "January 2, 2006" }}</span>
+        {{ with .Params.lastmod }}
+          {{ if gt . $.Date }}
+          <span class="post-updated">Updated {{ . | time.Format "January 2, 2006" }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+      <h1 class="post-title">{{ .Title }}</h1>
+      <p class="post-summary">{{ .Params.summary }}</p>
+    </div>
+  </header>
+
+  {{ if .Params.image }}
+  <div class="post-hero-image">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+  </div>
+  {{ end }}
+
+  <div class="post-body-container">
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <h3>Free IT Assessment</h3>
+        <p>Get an honest review of your Microsoft 365 security, backups, and infrastructure — no sales pressure.</p>
+        <a href="https://linesightdigital.com/#contact" class="btn-primary">Schedule Now →</a>
+      </div>
+
+      <div class="sidebar-card sidebar-card--subtle">
+        <h3>LineSight Digital</h3>
+        <ul>
+          <li>M365 &amp; Entra ID Admin</li>
+          <li>Linux &amp; Cloud Infrastructure</li>
+          <li>Backup &amp; Disaster Recovery</li>
+          <li>Security &amp; Compliance</li>
+          <li>Managed IT Services</li>
+          <li>Fractional CTO</li>
+        </ul>
+        <a href="https://linesightdigital.com/#services" class="sidebar-link">View All Services →</a>
+      </div>
+    </aside>
+  </div>
+
+  {{ if .Params.tags }}
+  <div class="post-tags-container">
+    <div class="post-tags">
+      {{ range .Params.tags }}
+      <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+</article>
+
+<section class="blog-cta-band">
+  <div class="blog-cta-inner">
+    <h2>Need Help With Your IT Environment?</h2>
+    <p>LineSight Digital serves Bay Area startups and small businesses with expert Microsoft 365, cloud, and security support.</p>
+    <a href="https://linesightdigital.com/#contact" class="btn-primary">Get Your Free IT Assessment →</a>
+  </div>
+</section>
+
+{{ end }}
