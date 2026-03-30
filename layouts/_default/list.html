@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<section class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-hero-tag">LineSight Digital Blog</div>
+    <h1>IT Insights for Bay Area Businesses</h1>
+    <p>Practical guidance on Microsoft 365, cybersecurity, cloud infrastructure, and managed IT — written for startups and small business owners.</p>
+  </div>
+</section>
+
+<section class="blog-list-section">
+  <div class="blog-list-container">
+
+    {{ $pages := where .Pages "Kind" "page" }}
+    {{ $featured := index $pages 0 }}
+
+    {{ if $featured }}
+    <article class="post-card post-card--featured">
+      {{ if $featured.Params.image }}
+      <a href="{{ $featured.RelPermalink }}" class="post-card-image-link">
+        <img src="{{ $featured.Params.image }}" alt="{{ $featured.Title }}" class="post-card-image" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="post-card-body">
+        <div class="post-card-meta">
+          <span class="post-card-tag">Latest Post</span>
+          <span class="post-card-date">{{ $featured.Date.Format "January 2, 2006" }}</span>
+        </div>
+        <h2 class="post-card-title"><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h2>
+        <p class="post-card-summary">{{ $featured.Params.summary }}</p>
+        <a href="{{ $featured.RelPermalink }}" class="post-card-cta">Read Article →</a>
+      </div>
+    </article>
+    {{ end }}
+
+    <div class="post-grid">
+      {{ range after 1 $pages }}
+      <article class="post-card">
+        {{ if .Params.image }}
+        <a href="{{ .RelPermalink }}" class="post-card-image-link">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" class="post-card-image" loading="lazy">
+        </a>
+        {{ end }}
+        <div class="post-card-body">
+          <div class="post-card-meta">
+            {{ with index .Params.categories 0 }}<span class="post-card-tag">{{ . }}</span>{{ end }}
+            <span class="post-card-date">{{ .Date.Format "January 2, 2006" }}</span>
+          </div>
+          <h2 class="post-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="post-card-summary">{{ .Params.summary }}</p>
+          <a href="{{ .RelPermalink }}" class="post-card-cta">Read More →</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<section class="blog-cta-band">
+  <div class="blog-cta-inner">
+    <h2>Is Your IT Environment Actually Secure?</h2>
+    <p>Most Bay Area small businesses discover gaps only after an incident. Start with a free assessment.</p>
+    <a href="https://linesightdigital.com/#contact" class="btn-primary">Get Your Free IT Assessment →</a>
+  </div>
+</section>
+
+{{ end }}
