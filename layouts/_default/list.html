@@ -11,7 +11,7 @@
 <section class="blog-list-section">
   <div class="blog-list-container">
 
-    {{ $pages := .Pages }}
+    {{ $pages := where .Pages "Kind" "page" }}
     {{ $featured := index $pages 0 }}
 
     {{ if $featured }}
