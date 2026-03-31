@@ -2,6 +2,7 @@ baseURL = "https://blog.linesightdigital.com/"
 canonifyURLs = true
 relativeURLs = false
 languageCode = "en-us"
+enableRobotsTXT = true
 title = "LineSight Digital Blog"
 
 [pagination]
