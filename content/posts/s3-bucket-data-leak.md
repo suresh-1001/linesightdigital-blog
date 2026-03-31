@@ -1,7 +1,7 @@
 ---
 title: "Is Your S3 Bucket Leaking Customer Data Right Now?"
 date: 2026-03-30
-draft: true
+draft: flase
 description: "Hundreds of companies have exposed millions of customer records through a single misconfigured cloud storage setting. Here's how to find out if you're next."
 image: "/images/s3-bucket-data-leak.png"
 categories: ["Cloud Security"]
