@@ -5,7 +5,7 @@ lastmod: 2026-03-15
 summary: "Most small businesses have Microsoft 365 configured out of the box. Out of the box is not secure. Here's what to fix first."
 description: "A practical guide to Microsoft 365 security baselines for Bay Area startups and small businesses — covering MFA, Conditional Access, Entra ID, and email authentication."
 draft: false
-image: "/images/m365-security-baselines.png"
+image: "/images/m365-security-baselines.webp"
 slug: "microsoft-365-security-baselines-small-business"
 tags:
   - Microsoft 365
