@@ -8,7 +8,7 @@ author: "Suresh Chand"
 ---
 
 ![Email authentication security](/images/hero-email-authentication-security.webp)
--->
+
 
 You've finally sent that important investor update, onboarding email, or customer invoice — and it silently ends up in spam. No bounce. No error. Just silence.
 
@@ -33,7 +33,7 @@ Even if you're not under attack, missing authentication records cause receiving 
 Think of these three protocols as a layered defense:
 
 ![Email authentication security](/images/diagram-spf-dkim-dmarc-layers.webp)
--->
+
 
 ### Layer 1 — SPF: Who Is Allowed to Send?
 
@@ -101,7 +101,7 @@ Most startups never get past `p=none` — which means the monitoring is on, but 
 Before fixing anything, you need to know where you stand. A quick DNS audit will reveal your current SPF, DKIM, and DMARC records — or their absence.
 
 ![Email authentication security](/images/terminal-dns-audit-output.webp)
--->
+
 
 You can check manually using command-line tools:
 
@@ -161,7 +161,7 @@ If you see `FAIL` or `NOT FOUND` on any of these, your domain is exposed.
 Many Bay Area startups use Amazon SES for transactional email — product notifications, password resets, invoices. SES is cost-effective and scalable, but the authentication setup has several steps that are easy to get wrong.
 
 ![Email authentication security](/images/aws-ses-email-flow-architecture.webp)
--->
+
 
 A complete SES authentication setup requires:
 
