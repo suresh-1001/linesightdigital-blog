@@ -3,6 +3,7 @@ title: "Why Your Startup's Emails Are Landing in Spam — And How to Fix It with
 date: 2026-04-01
 description: "Email authentication isn't just a deliverability problem — it's a security problem. Here's how Bay Area startups can audit and lock down SPF, DKIM, and DMARC before attackers exploit the gaps."
 draft: false
+featured_image: "/images/hero-email-authentication-security.webp"
 tags: ["email security", "SPF", "DKIM", "DMARC", "AWS SES", "managed IT", "Bay Area startups"]
 author: "Suresh Chand"
 ---
