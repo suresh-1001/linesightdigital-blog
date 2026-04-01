@@ -3,7 +3,7 @@ title: "Ransomware Hit a Bay Area Company Last Week. Here's What Their Backup St
 date: 2026-04-01
 description: "Ransomware doesn't give you a warning. For Bay Area startups and small businesses, a solid backup and disaster recovery strategy isn't optional — it's what determines whether you survive the attack."
 draft: false
-featured_image: "/images/hero-ransomware-backup-recovery.webp"
+image: "/images/hero-ransomware-backup-recovery.webp"
 tags: ["backup", "disaster recovery", "ransomware", "BDR", "cloud backup", "managed IT", "Bay Area startups"]
 author: "Suresh Chand"
 ---
