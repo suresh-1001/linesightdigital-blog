@@ -5,7 +5,7 @@ lastmod: 2026-02-20
 summary: "You're growing fast, your IT environment is getting complex, and nobody owns it. Here's how to know when a Fractional IT Director makes more sense than a full-time hire."
 description: "Five clear signals that your Bay Area startup or small business needs fractional IT leadership — and what a Fractional IT Director actually does."
 draft: false
-image: "/images/fractional-it-director.png"
+image: "/images/fractional-it-director.webp"
 slug: "5-signs-startup-needs-fractional-it-director"
 tags:
   - Fractional CTO
