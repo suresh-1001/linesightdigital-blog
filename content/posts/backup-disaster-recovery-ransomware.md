@@ -8,8 +8,6 @@ tags: ["backup", "disaster recovery", "ransomware", "BDR", "cloud backup", "mana
 author: "Suresh Chand"
 ---
 
-![Ransomware attack on a business server with backup shield protection](/images/hero-ransomware-backup-recovery.webp)
-
 It starts with one employee clicking a link in what looks like a vendor invoice. Within minutes, files across the network are encrypting. Servers go offline. The ransom note appears on every screen.
 
 The attacker gives you 72 hours to pay — or lose everything.
