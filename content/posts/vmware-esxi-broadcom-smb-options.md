@@ -1,7 +1,7 @@
 ---
 title: "VMware ESXi After Broadcom: What Bay Area SMBs Should Do Now"
 date: 2026-04-10
-draft: true
+draft: false
 categories: ["Infrastructure", "Cloud"]
 tags: ["VMware", "ESXi", "vSphere", "Broadcom", "Virtualization", "SMB", "Bay Area", "Azure", "Migration"]
 description: "Broadcom's acquisition of VMware changed the licensing model in ways that hit SMBs hardest. Here's a clear-eyed look at your options — and how to think through the decision."
