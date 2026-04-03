@@ -1,6 +1,6 @@
 ---
 title: "Linux Server Management for Bay Area Small Businesses — What You Need to Know"
-date: 2026-04-07
+date: 2026-04-03
 draft: false
 categories: ["Linux & Cloud Infrastructure"]
 tags: ["Linux", "Ubuntu", "Server Management", "SMB", "Bay Area", "Infrastructure"]
