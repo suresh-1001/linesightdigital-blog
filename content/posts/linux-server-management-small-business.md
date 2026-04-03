@@ -1,7 +1,7 @@
 ---
 title: "Linux Server Management for Bay Area Small Businesses — What You Need to Know"
 date: 2026-04-03
-draft: true
+draft: false
 categories: ["Linux & Cloud Infrastructure"]
 tags: ["Linux", "Ubuntu", "Server Management", "SMB", "Bay Area", "Infrastructure"]
 description: "Most Bay Area SMBs are running Linux somewhere — a web server, a file share, a cloud VM. Here's what proper Linux server management actually looks like."
