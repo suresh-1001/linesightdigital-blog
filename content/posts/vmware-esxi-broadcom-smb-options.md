@@ -1,6 +1,6 @@
 ---
 title: "VMware ESXi After Broadcom: What Bay Area SMBs Should Do Now"
-date: 2026-04-03
+date: 2026-04-04
 draft: false
 categories: ["Infrastructure", "Cloud"]
 tags: ["VMware", "ESXi", "vSphere", "Broadcom", "Virtualization", "SMB", "Bay Area", "Azure", "Migration"]
