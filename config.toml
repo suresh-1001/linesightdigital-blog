@@ -40,3 +40,5 @@ title = "LineSight Digital Blog"
 
 [minify]
   minifyOutput = true
+
+disableKinds = ["taxonomy", "term"]
